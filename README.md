@@ -1,9 +1,9 @@
-# <h1 id="small_projects"> small_projects : Stuff to store the small kind of projects </h1>
+# <h1 id="small_projects"> Small_Projects : A Stuff to store the small kind of projects </h1>
 ## *JavaScript* Projects or make basics strong
-### **lazy load**, With the hlep of this app, can implment the lazy loading help of core javascript , and also we can during scroll , loading images o/w no load if you are not scroll
+### **lazy load**, With the help of this app, can implement the lazy loading help of core javascript, and also we can during scroll, loading images o/w no load if you are not scrolling
 
 ## Indexing the contents
-####   <p><a href="#badges" > Repo Badges</a></p>
+####   <p><a href="#badges" >Badges</a></p>
 ####   <p><a href="#demo" >App Demo</a></p>
 ####   <p><a href="#stack" >App Tech Stack</a></p>
 ####   <p><a href="#runLocally" >Run Locally</a></p>
@@ -23,8 +23,10 @@
 
 ## <h2 id="demo" >Demo </h2>
 
+
 <p text-align=left>
-  <img src="https://user-images.githubusercontent.com/91304976/203494510-77735dad-2653-4835-8d86-8915b384abeb.gif" width="500" height="" alt="small_projects_home"/>
+
+  <img src="https://github.com/Nik4Furi/small_projects/assets/91304976/085de638-9977-43dc-8453-652604c60773" width="500" height="" alt="small_projects_home"/>
       
 </p>
 
@@ -62,22 +64,22 @@ Install Extension On VSCode*
 
 Start the server
 
-- `Right click` on index.html and run server.
+- `Right click` on index.html and run the server.
 
 <a href="#small_projects">Go Home </a>
 
 ## <h2 id="listRef">List Of Javascript Projects </h2>
 
-| Repo/Project Name   |           Link                  |
+| Repo/Project Name  |            Link                               |
 | ----------------- | -------------------------------------|
-| Searching |  [Searchng]() |
-| Lazy Loading |  [Lazy Loading]() |
+| Searching |  [Searchng](https://github.com/Nik4Furi/small_projects/tree/javascript/JavaScript/01_Searching) |
+| Lazy Loading |  [Lazy Loading](https://github.com/Nik4Furi/small_projects/tree/javascript/JavaScript/02_LazyLoadImg) |
 
 <a href="#small_projects">Go Home </a>
 
 ## <h2 id="features">Features </h2>
 
-- Can load the images with lazy, and save resources, and computation
+- Can load the images with laziness, and save resources, and computation
 
 <a href="#small_projects">Go Home </a>
 
@@ -87,7 +89,7 @@ Start the server
 
 Here are some related projects of this repo
 
-[Typescript-React](https://github.com/Nik4Furi/inotes_api)
+[Typescript-React](https://github.com/Nik4Furi/small_projects/tree/typescript-react)
 
-[Javascript](https://github.com/Nik4Furi/urlShortener_api)
+[Javascript](https://github.com/Nik4Furi/small_projects/tree/javascript)
 
