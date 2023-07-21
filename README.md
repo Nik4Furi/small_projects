@@ -13,7 +13,6 @@
 
 ## <h2 id="badges" >Badges </h2>
 
-
 ![GitHub Repo stars](https://img.shields.io/github/stars/Nik4Furi/small_projects?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/Nik4Furi/small_projects?style=social)
 
 ![GitHub top language](https://img.shields.io/github/languages/top/Nik4Furi/small_projects)   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Nik4Furi/small_projects?style=flat-square) ![GitHub repo file count](https://img.shields.io/github/directory-file-count/Nik4Furi/small_projects) 
@@ -69,7 +68,7 @@ Start the server
 
 ## <h2 id="listRef">List Of Javascript Projects </h2>
 
-| Repo/Project Name              Link
+| Repo/Project Name   |           Link                  |
 | ----------------- | -------------------------------------|
 | Searching |  [Searchng]() |
 | Lazy Loading |  [Lazy Loading]() |
