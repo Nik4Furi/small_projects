@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 import { Button, Stack } from '@chakra-ui/react';
 
@@ -6,26 +6,62 @@ import TodoCard from "./TodoCard"
 import { ITodo } from '../types/todo.types';
 
 const Form = () => {
-    const [todo,setTodo] = useState('')
+    const [todo, setTodo] = useState('')
     const [form, setForm] = useState<ITodo[]>([]);
+
+    const [edit, setEdit] = useState({isEdit:false,id:''});
 
     const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => setTodo(e.target.value);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-       
+
         //---------- Add a new todo
-        let id = Date.now();
+        if (edit.isEdit === true) {
+            console.log('check edit text ', todo);
 
-        let newTodo:ITodo = {
-            id,todo,isDone:false
+            setForm(form.map((item)=> 
+                item.id === edit.id ? {...item,todo} : item
+            ))
+            edit.isEdit = false;
+            setEdit({isEdit:false,id:''});
         }
-        
-        setForm([...form,newTodo]);
+        else {
+            let id = Date.now().toString();
 
-        setTodo('');        
+            let newTodo: ITodo = {
+                id, todo, isDone: false
+            }
+
+            setForm([...form, newTodo]);
+        }
+        setTodo('');
+
         // console.log('checking the todo ',form,form.length);
-        
+
+    }
+
+    //----------------- Function to handle events on todo 
+    const handleDelete = (id: string ) => {
+        let deleteTodos = form.filter((item) => item.id !== id);
+        setForm(deleteTodos);
+
+        console.log('delete todo ', id);
+    }
+    const handleDone = (id: string) => {
+        setForm(form.map((item) => item.id === id ? { ...item, isDone: !item.isDone } : item))
+
+        console.log('done todo ', id);
+    }
+
+    const handleEdit = (id: string ) => {
+        let text = form.filter((item) => item.id === id);
+        console.log('check test ', text[0].todo);
+        setTodo(text[0].todo);
+
+        setEdit({isEdit:true,id});
+
+        console.log('delete todo ', id);
     }
 
     return (
@@ -43,16 +79,16 @@ const Form = () => {
             {/* A component to show our cards */}
             <Stack direction={["column", "row"]} flexWrap={"wrap"} margin={"12px auto"}>
 
-            {
-                form && form.map((item)=>(
-                    <TodoCard key={item.id} todo={item.todo}  isDone={item.isDone} id={item.id} />
-                ))
-                
-            }
-            {
-                !form || form.length===0 && "No todo did you add ,make a new now"
-            }
-                
+                {
+                    form && form.map((item) => (
+                        <TodoCard key={item.id} todo={item.todo} isDone={item.isDone} id={item.id} handleDelete={handleDelete} handleEdit={handleEdit} handleDone={handleDone} />
+                    ))
+
+                }
+                {
+                    !form || form.length === 0 && "No todo did you add ,make a new now"
+                }
+
             </Stack>
         </>
     )

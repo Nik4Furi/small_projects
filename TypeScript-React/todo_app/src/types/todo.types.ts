@@ -1,7 +1,7 @@
 
 //------------- Interface of todo to store 
 export interface ITodo{
-    id : string | number;
+    id : string ;
     todo : string;
     isDone:Boolean
 }
