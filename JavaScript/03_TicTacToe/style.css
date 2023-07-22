@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 12px 23px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 2px 0;
+}
+
+p {
+    font-size: 1.3em;
+    margin: 2px 0;
+    line-height: 23px;
+}
+
+
+.text-highlight {
+    color: salmon;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-property {
+    background-color: rgb(248, 239, 229);
+}
+
+/* ---------------------- Wining Box ----------------------- */
+#WiningBox {
+    width: 50%;
+    margin: 12px auto;
+
+    & h4 {
+        text-align: center;
+        color: purple;
+        font-weight: 800;
+        font-size: 1.5rem;
+
+    }
+
+    & .btn {
+        border: 1px solid black;
+        border-radius: 12px;
+        margin: 4px auto;
+        padding: 5px 7px;
+        background-color: rgb(162, 8, 162);
+        color: white;
+        cursor: pointer;
+        /* width: 62px; */
+        font-size: 1.2rem;
+        display: block;
+
+        &:hover {
+            background-color: purple;
+        }
+    }
+
+
+}
+
+
+
+/* ------------------- Boxes Styling ---------------- */
+.DivBox {
+    width: 100%;
+
+    & .lineBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+        & .box {
+            width: 125px;
+            height: 125px;
+            background-color: yello;
+            border: 1px solid purple;
+            cursor: pointer;
+            font-size: 7rem;
+            color: #751675;
+            text-align: center;
+        }
+
+
+        & #box0 {
+            border-top: 0px;
+            border-left: 0px;
+        }
+
+        & #box1 {
+            border-top: 0px;
+        }
+
+        & #box2 {
+            border-top: 0px;
+            border-right: 0px;
+        }
+
+        & #box3 {
+            border-left: 0px;
+        }
+
+        & #box5 {
+            border-right: 0px;
+        }
+
+        & #box6 {
+            border-bottom: 0px;
+            border-left: 0px;
+        }
+
+        & #box7 {
+            border-bottom: 0px;
+        }
+
+        & #box8 {
+            border-bottom: 0px;
+            border-right: 0px;
+        }
+
+    }
+}
