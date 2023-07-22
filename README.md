@@ -1,7 +1,6 @@
 # <h1 id="small_projects"> Small_Projects : A Stuff to store the small kind of projects </h1>
 ## *JavaScript* Projects or make basics strong
-### **lazy load**, With the help of this app, can implement the lazy loading help of core javascript, and also we can during scroll, loading images o/w no load if you are not scrolling
-
+### **Tictactoe ❌⭕**,is a javascipt game, is help to make your day enjoyable, use and take time to rest
 ## Indexing the contents
 ####   <p><a href="#badges" >Badges</a></p>
 ####   <p><a href="#demo" >App Demo</a></p>
@@ -26,7 +25,7 @@
 
 <p text-align=left>
 
-  <img src="https://github.com/Nik4Furi/small_projects/assets/91304976/085de638-9977-43dc-8453-652604c60773" width="500" height="" alt="small_projects_home"/>
+  <img src="https://github.com/Nik4Furi/small_projects/assets/91304976/3768ad3d-5e5a-4635-8f69-265bda0b2c7f" width="500" height="" alt="small_projects_home"/>
       
 </p>
 
@@ -74,12 +73,13 @@ Start the server
 | ----------------- | -------------------------------------|
 | Searching |  [Searchng](https://github.com/Nik4Furi/small_projects/tree/javascript/JavaScript/01_Searching) |
 | Lazy Loading |  [Lazy Loading](https://github.com/Nik4Furi/small_projects/tree/javascript/JavaScript/02_LazyLoadImg) |
+| Tic Tac Toe |  [Tic Tac Toe](https://github.com/Nik4Furi/small_projects/tree/javascript/JavaScript/03_TicTacToe) |
 
 <a href="#small_projects">Go Home </a>
 
 ## <h2 id="features">Features </h2>
 
-- Can load the images with laziness, and save resources, and computation
+- Play a game when you free, tictactoe❌⭕
 
 <a href="#small_projects">Go Home </a>
 
