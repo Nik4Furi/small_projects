@@ -3,10 +3,11 @@
 **small_projects**, is a repo where I am creating all intermediate, and small level projects, and we use this projects functions or components to implement actions in *Big Projects* 🌠
 
 ## Indexing the contents
-####   <p><a href="#badges" >Badges</a></p>
-####   <p><a href="#stack" >Tech Stack</a></p>
-####   <p><a href="#runLocally" >Run Locally</a></p>
-####   <p><a href="#features" >Features</a></p>
+
+<p><a href="#badges"> Badges </a></p>
+<p><a href="#stack"> Tech Stack </a></p>
+<p><a href="#runLocally" >Run Locally</a></p>
+<p><a href="#features" >Features</a></p> 
 
 ## <h2 id="badges" >Badges </h2>
 
@@ -26,8 +27,8 @@
 Currently I am creating two major repo projects are in 
    STACK ⚙️         |       Repos ⚱️
 | :-----------: | :-------------: |
-1.    **JavaScript** |       [JavaScript](https://github.com/matiassingers/awesome-readme) 
-2. **React-TypeScript** |     [React-TypeScript](https://github.com/matiassingers/awesome-readme)
+ **JavaScript** |       [JavaScript](https://github.com/Nik4Furi/small_projects/tree/javascript) 
+ **React-TypeScript** |     [React-TypeScript](https://github.com/Nik4Furi/small_projects/tree/type-react)
 
 <a href="#small_projects">Go Home </a>
 
