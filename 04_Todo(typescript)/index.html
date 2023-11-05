@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo App, Using Typescript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-primary">Todo App</h1>
+        <p>Update your todos, done or edit your daily working life, it will help to manage your life</p>
+
+        <!-- Here the section to showing the input or form  -->
+        <section id="AddTodoSection">
+            <form id="AddTodoForm">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Enter Title: </label>
+                    <input type="text" class="form-control" name="title" id="title" minlength="5" required
+                        placeholder="Title of the todo">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Enter Description</label>
+                    <textarea minlength="5" required placeholder="Description of the todo, describe in detail"
+                        class="form-control" id="description" name="description" rows="3"></textarea>
+                </div>
+
+
+                <div class="mb-3">
+                    <button type="submit" id="AddTodoBtn" class="btn btn-primary">Add Todo</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Here we filter the todos data by categories and title  -->
+        <section id="FilterTodos" style="margin: 5px auto;">
+            <form id="FilterTodosForm">
+                <h3>Filter Todos</h3>
+                <input class="form-control" list="categories" id="categories" placeholder="Type to search...">
+                <datalist id="categories">
+                    <option value="coding">
+                    <option value="sports">
+                </datalist>
+            </form>
+        </section>
+
+
+        <!-- Here the section to show all the todos  -->
+        <section id="ShowTodos" style="margin: 5px auto;">
+            <h2>Your Todos</h2>
+            <div class="row">
+                <div class="card col-3 mx-2 my-2" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex items-center justify-content-between">
+                            <p class="text-primary">Coding</p>
+
+                            <div class="d-flex justify-content-evenly items-center">
+                                <p id="editTodos" class="text-success mx-2">Edit </p>
+                                <p id="deleteTodos" class="text-danger mx-2">Delete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-3 mx-2 my-2" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex items-center justify-content-between">
+                            <p class="text-primary">Coding</p>
+
+                            <div class="d-flex justify-content-evenly items-center">
+                                <p id="editTodos" class="text-success mx-2">Edit </p>
+                                <p id="deleteTodos" class="text-danger mx-2">Delete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-3 mx-2 my-2" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <div class="d-flex items-center justify-content-between">
+                            <p class="text-primary">Coding</p>
+
+                            <div class="d-flex justify-content-evenly items-center">
+                                <p id="editTodos" class="text-success mx-2">Edit </p>
+                                <p id="deleteTodos" class="text-danger mx-2">Delete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
