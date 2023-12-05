@@ -1,0 +1,5 @@
+Work-flow of open source 
+
+	1. Find first project
+	2. We have to find the task-> move to issue section on github
+		kuch bhi ho like task, bug report, or something new changes we want, can use the issue tab. See the  label of issue like feature, bug
